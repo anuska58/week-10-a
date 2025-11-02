@@ -21,9 +21,9 @@ def train_model_1():
     model.fit(X, y)
 
     # Save the trained model to a file
-    with open("model1.pkl", "wb") as f:
+    with open("model_1.pickle", "wb") as f:
         pickle.dump(model, f)
-    print("Model trained and saved as model1.pkl")
+    print("Model trained and saved as model_1.pickle")
 
 def roast_category(value):
     mapping = {
@@ -49,9 +49,9 @@ def train_model_2():
     model.fit(X, y)
 
     # Save the trained model to a file
-    with open("model2.pkl", "wb") as f:
+    with open("model_2.pickle", "wb") as f:
         pickle.dump(model, f)
-    print("Model trained and saved as model2.pkl")
+    print("Model trained and saved as model_2.pickle")
     
 if __name__ == "__main__":
     train_model_1()
